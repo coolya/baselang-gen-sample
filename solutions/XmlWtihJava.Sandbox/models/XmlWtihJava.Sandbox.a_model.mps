@@ -19,6 +19,9 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
@@ -29,6 +32,7 @@
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="1225271369338" name="jetbrains.mps.baseLanguage.structure.IsEmptyOperation" flags="nn" index="17RlXB" />
       <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
@@ -125,8 +129,8 @@
                   <node concept="3clFbF" id="7oX9n7NyAIc" role="3cqZAp">
                     <node concept="2OqwBi" id="7oX9n7NyAI9" role="3clFbG">
                       <node concept="10M0yZ" id="7oX9n7NyAIa" role="2Oq$k0">
-                        <ref role="1PxDUh" to="wyt6:~System" />
-                        <ref role="3cqZAo" to="wyt6:~System.out" />
+                        <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                        <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                       </node>
                       <node concept="liA8E" id="7oX9n7NyAIb" role="2OqNvi">
                         <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
@@ -141,7 +145,35 @@
                   <node concept="37vLTw" id="7oX9n7NyxWI" role="2Oq$k0">
                     <ref role="3cqZAo" node="7oX9n7NyxVR" resolve="foo" />
                   </node>
-                  <node concept="17RvpY" id="7oX9n7NyAHK" role="2OqNvi" />
+                  <node concept="17RvpY" id="6Qlm10A3z__" role="2OqNvi" />
+                </node>
+              </node>
+              <node concept="3clFbJ" id="6Qlm10A3B3n" role="3cqZAp">
+                <node concept="3clFbS" id="6Qlm10A3B3p" role="3clFbx">
+                  <node concept="3clFbF" id="6Qlm10A3By1" role="3cqZAp">
+                    <node concept="2OqwBi" id="6Qlm10A3BxY" role="3clFbG">
+                      <node concept="10M0yZ" id="6Qlm10A3BxZ" role="2Oq$k0">
+                        <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                        <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                      </node>
+                      <node concept="liA8E" id="6Qlm10A3By0" role="2OqNvi">
+                        <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
+                        <node concept="Xl_RD" id="6Qlm10A3BCP" role="37wK5m">
+                          <property role="Xl_RC" value="empty" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="6Qlm10A3BeB" role="3clFbw">
+                  <node concept="2YIFZM" id="6Qlm10A3B0f" role="2Oq$k0">
+                    <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+                    <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String)" resolve="getProperty" />
+                    <node concept="Xl_RD" id="6Qlm10A3B0q" role="37wK5m">
+                      <property role="Xl_RC" value="foo" />
+                    </node>
+                  </node>
+                  <node concept="17RlXB" id="6Qlm10A3BvV" role="2OqNvi" />
                 </node>
               </node>
             </node>

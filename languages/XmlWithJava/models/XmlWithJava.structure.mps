@@ -17,6 +17,7 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
+        <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
@@ -46,16 +47,17 @@
       <ref role="20lvS9" to="tpee:fzclF80" resolve="StatementList" />
     </node>
   </node>
-  <node concept="1TIwiD" id="7oX9n7Nz5Hs">
-    <property role="EcuMT" value="8520007241402440540" />
-    <property role="TrG5h" value="GenJavaBlock" />
-    <ref role="1TJDcQ" to="iuxj:5M4a$b5ikxF" resolve="XmlContent" />
-    <node concept="1TJgyj" id="7oX9n7Nz69X" role="1TKVEi">
-      <property role="IQ2ns" value="8520007241402442365" />
+  <node concept="1TIwiD" id="6Qlm10A3iPr">
+    <property role="EcuMT" value="7896314348045151579" />
+    <property role="TrG5h" value="BaseLangXmlFile" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="iuxj:5M4a$b5j9j0" resolve="XmlFile" />
+    <node concept="1TJgyj" id="6Qlm10A3jKF" role="1TKVEi">
+      <property role="IQ2ns" value="7896314348045155371" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="class" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="tpee:g7pOWCK" resolve="Classifier" />
+      <ref role="20lvS9" to="tpee:fz12cDA" resolve="ClassConcept" />
     </node>
   </node>
 </model>
